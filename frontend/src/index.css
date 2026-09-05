@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --ink: #0A0A0A;
+    --surface: #F7F7F8;
+    --line: #E8E8E8;
+    --muted: #6B7280;
+    --caption: #9A9A9A;
+    --accent: #2563EB;
+  }
+  * { border-color: #E8E8E8; }
+  html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+  body {
+    background-color: #FFFFFF;
+    color: var(--ink);
+    font-family: 'Inter', system-ui, sans-serif;
+    @apply antialiased;
+    font-feature-settings: 'cv11','ss01';
+    text-rendering: optimizeLegibility;
+  }
+  ::selection { background-color: #0A0A0A; color: white; }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  /* Subtle micro-texture — per-section, not fixed overlay */
+  .bg-grid-subtle {
+    background-image:
+      linear-gradient(rgba(10,10,10,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(10,10,10,0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  /* Elegant editorial underline — replaces badge/pill highlights */
+  .link-underline {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    padding-bottom: 2px;
+  }
+  .link-underline-fade {
+    background-image: linear-gradient(rgba(10,10,10,0.25), rgba(10,10,10,0.25));
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    padding-bottom: 2px;
+    transition: background-size 0.3s ease;
+  }
+  .link-underline-fade:hover {
+    background-image: linear-gradient(#0A0A0A, #0A0A0A);
+  }
+  /* Marquee track for tech strip */
+  @keyframes marquee-x {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-33.333%); }
+  }
+  .animate-marquee-x {
+    animation: marquee-x 30s linear infinite;
+  }
+  .marquee-mask {
+    mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
+    -webkit-mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
+  }
+  /* Timeline draw-in */
+  @keyframes grow-y {
+    from { transform: scaleY(0); }
+    to { transform: scaleY(1); }
+  }
+  /* Soft float for portrait accents */
+  @keyframes float-slow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+  .animate-float-slow { animation: float-slow 7s ease-in-out infinite; }
+  @media (prefers-reduced-motion: reduce) {
+    .animate-marquee-x, .animate-float-slow { animation: none; }
+  }
+}
