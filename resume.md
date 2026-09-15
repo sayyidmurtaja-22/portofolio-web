@@ -164,3 +164,48 @@ cd ../backend; npm run build
 ---
 
 *Diperbarui: 2026-09-05 — Landing Page dark bento sayyimurtaja, foto terpasang, error CSS diperbaiki.*
+
+---
+
+## 8. Update Job-Ready Positioning + Training Split (2026-09-11)
+
+> Tujuan: ubah positioning dari "intern aktif" menjadi profesional job-ready (full-time), dan pecah Training gabungan menjadi 4 kartu individual. Semua teks English. Design system tidak diubah.
+
+### 📄 frontend/src/components/Hero.jsx
+**WHAT:** Headline `Building the web, end to end.` → `Fullstack Developer, ready for full-time roles.` Deskripsi `currently a Website Developer Intern at Wiratek` → `Aspiring Fullstack Developer with hands-on internship experience... Former Intern at Wiratek Solusi Asia... Ready to contribute to your team full-time.` Meta row `Open to internships & freelance` + emerald pulse dot → `Open to full-time roles & freelance` + static `bg-ink` dot. Follow-up fix: frasa `Former Intern at Wiratek Solusi Asia` dibungkus satu `<span className="whitespace-nowrap">` agar tampil 1 line utuh.
+**HOW:** Edit `motion.h1` (line 38-42), `motion.p` deskripsi (line 44-48), meta row (line 75-77). `whitespace-nowrap` memaksa browser tidak memenggal antara "at" dan "Wiratek".
+**WHY:** Hero adalah kesan pertama recruiter — past-tense + "ready full-time" memberi sinyal job-ready. Static neutral dot menghapus cue visual "currently active". `nowrap` dipilih dibanding `<br/>`/`block` karena tidak mengubah layout/tinggi paragraf dan tetap responsif (frasa ±300px muat di `max-w-[580px]` dan mobile ≥360px).
+
+### 📄 frontend/src/components/Experience.jsx
+**WHAT:** (1) Wiratek `Jun 2026 to Present` → `Jun 2024 to Dec 2024 [PLACEHOLDER]`, role `Website Developer Intern` → `Website Developer — Internship Experience`, points present-tense → past-tense hasil kerja. (2) 1 blok Training gabungan (`RevoU · Kesatria · Geosoftware · Gim`) → 4 kartu individual: RevoU / Kesatria Academy / Geosoftware / GIM e-Learning (masing-masing: program name, provider, duration [PLACEHOLDER], key skills, Completed). (3) Tambah badge `Completed` netral ke semua kartu.
+**HOW:** Array `entries` 4 → 7 objek (`{period, place, role, org, status:'Completed', note, points[3]}`). Header kartu dirender `org + badge + role` dengan style `border-line bg-surface text-muted` + dot `bg-zinc-400` (bukan emerald). Reuse kartu `rounded-2xl border-line shadow-soft`, timeline rail, grid `lg:grid-cols-[220px_1fr]` yang sama — tanpa CSS baru.
+**WHY:** Data-driven map menjaga konsistensi visual otomatis dan responsif di semua breakpoint dibanding 4 komponen bespoke. Badge zinc netral memberi sinyal "completed/past" vs "active/current". Past-tense menekankan kontribusi yang sudah delivered.
+
+### 📄 frontend/src/components/About.jsx
+**WHAT:** Subtitle `Fullstack Developer Intern` → `Fullstack Developer`. Paragraf `Currently interning as Website Developer at Wiratek` → `Former Intern at Wiratek Solusi Asia as Website Developer... Now actively seeking full-time opportunities`. Stats `{5+, Trainings & bootcamps / Jun 2026, Intern at Wiratek}` → `{4, Trainings completed / 2024, Internship Experience at Wiratek}`.
+**HOW:** Edit teks saja (line 22, 50-53, 74-78), tanpa ubah layout grid `lg:col-span-5/7`.
+**WHY:** About adalah cerminan Hero untuk yang scroll — kosakata past-tense yang sama menghindari kontradiksi. Perbaikan tanggal menghapus future-date `2026`.
+
+### 📄 frontend/src/components/Resume.jsx
+**WHAT:** Summary `Fresh graduate... plus internship as Website Developer` → `Aspiring Fullstack Developer with hands-on internship experience... Internship Experience... Actively seeking full-time`. Kartu gelap Work Experience: tambah pill `Completed`, subline `Website Developer Intern · Jun 2026 to Present` → `Website Developer — Internship Experience · Jun 2024 to Dec 2024 [PLACEHOLDER]`, bullets → past-tense `Delivered/Built/Designed`.
+**HOW:** Edit Summary (line 43), header kartu + pill `border-white/15 bg-white/10` (line 50-53), list bullets (line 54-58). Style dark-card dipertahankan.
+**WHY:** Section Resume adalah sumber kebenaran CV — badge + tanggal past-tense menghapus cue "Present"/aktif dengan tetap memakai design yang sama.
+
+### 📄 frontend/src/components/Contact.jsx
+**WHAT:** `Open to internships, freelance and collaborations...` → `Actively seeking full-time opportunities... Open to full-time roles, freelance and collaborations — I reply fast.`
+**HOW:** Edit satu `<p>` (line 33).
+**WHY:** CTA kontak harus selaras dengan intent Hero, agar hiring manager tidak menerima sinyal campuran.
+
+### 📄 frontend/src/components/Projects.jsx
+**WHAT:** CTA card `Internships, freelance and collaborations. I reply fast.` → `Full-time roles, freelance and collaborations. I reply fast.`
+**HOW:** Edit teks di kartu CTA `xl` (line 155).
+**WHY:** Kartu kecil tapi terlihat di grid 3-kolom; menjaga funnel konsisten tanpa ubah layout.
+
+### 📄 frontend/src/components/Footer.jsx
+**WHAT:** `Fullstack Developer Intern — web development & AI automation...` → `Fullstack Developer — ... Former Intern at Wiratek... Open to full-time roles.`
+**HOW:** Edit satu `<p>` (line 19).
+**WHY:** Footer tampil di setiap posisi scroll / snippet SEO — past-tense menghindari branding intern yang basi.
+
+**Catatan placeholder:** `[PLACEHOLDER]` dipakai untuk tanggal training, durasi, dan detail skills sertifikat — cari `[PLACEHOLDER]` untuk replace. Build terverifikasi: `vite build ✓ 386 modules`.
+
+*Diperbarui: 2026-09-11 — Job-ready positioning, Experience past-status, Training split 4 kartu, Hero nowrap fix, didokumentasikan di file ini.*

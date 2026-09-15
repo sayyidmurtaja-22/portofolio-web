@@ -1,0 +1,21 @@
+# Node & Build artifacts
+node_modules/
+*/node_modules/
+dist/
+*/dist/
+.scratch/
+
+# Environment & Temp
+.env
+.env.local
+.env.*.local
+*.local
+.vercel/
+*/.vercel/
+
+# Logs & OS files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+Thumbs.db

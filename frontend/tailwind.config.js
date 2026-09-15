@@ -4,15 +4,22 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: '#0A0A0A',
-        surface: '#F7F7F8',
-        line: '#E8E8E8',
-        muted: '#6B7280',
-        caption: '#9A9A9A',
-        accent: '#2563EB',
+        bg: '#0F0F0F',
+        surface: '#161616',
+        border: '#2A2A2A',
+        line: '#2A2A2A',
+        card: '#1A1A1A',
+        accent: '#C8FF2E',
+        'accent-dim': '#2A3313',
+        faint: '#6B7280',
+        ink: '#FFFFFF',
+        muted: '#9CA3AF',
+        caption: '#6B7280',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
+        head: ['Geist', 'Inter', 'system-ui', 'sans-serif'],
+        mono: ['Geist Mono', 'ui-monospace', 'SFMono-Regular', 'monospace'],
       },
       boxShadow: {
         soft: '0 1px 2px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.04)',

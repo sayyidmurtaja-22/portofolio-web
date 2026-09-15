@@ -1,4 +1,5 @@
 {
+  "name": "murtaja-portofolio",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "devCommand": "npm run dev",
@@ -35,6 +36,6 @@
     }
   ],
   "env": {
-    "VITE_API_URL": "@vite_api_url"
+    "VITE_API_URL": "https://api-placeholder.com"
   }
 }

@@ -6,10 +6,15 @@ const fadeUp = {
   visible: (i = 0) => ({ opacity: 1, y: 0, transition: { delay: i * 0.09, duration: 0.6, ease: [0.22, 1, 0.36, 1] } }),
 };
 
-const ICONS = [
-  'react','nextjs','nestjs','python','flask','flutter',
-  'postgresql','mysql','javascript','typescript','tailwindcss','wordpress',
-  'laravel','html5','css3','tensorflow',
+const TECH = [
+  { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+  { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg', invert: true },
+  { name: 'NestJS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg' },
+  { name: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
+  { name: 'Tailwind', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg' },
+  { name: 'Flutter', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg' },
+  { name: 'WordPress', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg' },
+  { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
 ];
 
 const Hero = () => {
@@ -19,7 +24,7 @@ const Hero = () => {
   const go = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
 
   return (
-    <section id="home" className="relative bg-white overflow-hidden">
+    <section id="home" className="relative bg-bg overflow-hidden">
       <div className="absolute inset-0 bg-grid-subtle opacity-70 pointer-events-none" aria-hidden="true" />
       <div className="absolute -top-24 right-0 w-[420px] h-[420px] bg-surface rounded-full blur-3xl opacity-70 pointer-events-none" aria-hidden="true" />
 
@@ -27,75 +32,62 @@ const Hero = () => {
         <div className="min-h-[88vh] flex items-center pt-[72px] pb-8 lg:py-12">
           <div className="grid lg:grid-cols-12 gap-8 lg:gap-10 items-center w-full py-6 lg:py-10">
             <div className="lg:col-span-7">
-              {/* Elegant eyebrow: typography + rule, no badge/pill */}
+              {/* Eyebrow mono lime */}
               <motion.div custom={0} variants={fadeUp} initial="hidden" animate="visible" className="flex items-center gap-4">
-                <span className="h-px w-10 sm:w-14 bg-ink/70" aria-hidden="true" />
-                <p className="text-[11px] sm:text-xs font-semibold tracking-[0.22em] uppercase text-ink">
-                  Muhammad Sayyid Murtaja <span className="text-caption font-medium tracking-[0.18em]">· Fullstack Developer</span>
+                <span className="h-px w-10 sm:w-14 bg-accent/60" aria-hidden="true" />
+                <p className="font-mono text-[11px] sm:text-xs tracking-[0.18em] uppercase text-accent">
+                  — Muhammad Sayyid Murtaja · Fullstack Developer
                 </p>
               </motion.div>
 
-              <motion.h1 custom={1} variants={fadeUp} initial="hidden" animate="visible" className="mt-6 text-[38px] sm:text-[52px] lg:text-[64px] font-extrabold leading-[0.96] tracking-[-0.03em] text-ink text-balance">
-                Building the web,
-                <br />
-                <span className="font-light text-muted">end to end.</span>
+              <motion.h1 custom={1} variants={fadeUp} initial="hidden" animate="visible" className="mt-6 font-head text-[38px] sm:text-[52px] lg:text-[68px] font-bold leading-[0.96] tracking-[-0.03em] text-ink text-balance">
+                I build modern web apps, end to end.
               </motion.h1>
 
-              <motion.p custom={2} variants={fadeUp} initial="hidden" animate="visible" className="mt-6 max-w-[580px] text-[15px] sm:text-[17px] leading-[1.75] text-muted text-balance">
-                Fresh graduate focused on <span className="font-semibold text-ink link-underline">web development</span> and{' '}
-                <span className="font-semibold text-ink link-underline">AI automation</span>, currently a Website Developer Intern at{' '}
-                <span className="font-semibold text-ink">Wiratek Solusi Asia</span>, shipping an LMS platform with NestJS, PostgreSQL and Handlebars.
+              <motion.p custom={2} variants={fadeUp} initial="hidden" animate="visible" className="mt-5 max-w-[580px] text-[16px] leading-[1.6] text-muted text-balance">
+                Fullstack Developer experienced across the web ecosystem — from responsive interfaces to robust APIs and production deployments.
               </motion.p>
 
-              <motion.div custom={3} variants={fadeUp} initial="hidden" animate="visible" className="mt-4 max-w-[580px] text-[13px] sm:text-sm leading-6 text-caption">
-                <p>
-                  <span className="text-ink font-medium">RevoU Fullstack</span>
-                  <span className="mx-2 text-line">·</span>
-                  <span className="text-ink font-medium">Kesatria JS / Next.js</span>
-                  <span className="mx-2 text-line">·</span>
-                  <span className="text-ink font-medium">WebGIS</span>
-                  <span className="mx-2 text-line">·</span>
-                  5 shipped projects
+              <motion.div custom={3} variants={fadeUp} initial="hidden" animate="visible" className="mt-4 max-w-[580px]">
+                <p className="font-mono text-[12px] tracking-[0.08em] uppercase leading-6 text-caption">
+                  Kesatria Academy Certified · 5+ Verified Credentials · Open to Work
                 </p>
               </motion.div>
 
               <motion.div custom={4} variants={fadeUp} initial="hidden" animate="visible" className="mt-8 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
-                <button onClick={() => go('projects')} className="inline-flex items-center justify-center h-12 px-8 rounded-lg bg-ink text-white text-[14px] font-medium hover:bg-black hover:-translate-y-px active:translate-y-0 transition-all shadow-soft">
+                <button onClick={() => go('projects')} className="inline-flex items-center justify-center h-12 px-8 rounded-lg bg-accent text-[#0F0F0F] text-[14px] font-semibold hover:brightness-110 hover:-translate-y-px active:translate-y-0 transition-all">
                   Explore Projects
                   <span className="ml-2" aria-hidden="true">→</span>
                 </button>
-                <button onClick={() => go('experience')} className="inline-flex items-center justify-center h-12 px-8 rounded-lg border border-line bg-white text-ink text-[14px] font-medium hover:border-ink hover:bg-surface transition-all">
+                <button onClick={() => go('experience')} className="inline-flex items-center justify-center h-12 px-8 rounded-lg border border-line bg-surface text-ink text-[14px] font-medium hover:border-accent transition-all">
                   View Experience
                 </button>
               </motion.div>
 
-              {/* Mature meta row: minimal borders, no pills */}
+              {/* Meta row */}
               <motion.div custom={5} variants={fadeUp} initial="hidden" animate="visible" className="mt-10 pt-6 border-t border-line max-w-[580px]">
-                <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-0 text-[12px] sm:text-[13px] text-caption">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-0 text-[12px] sm:text-[13px]">
                   <span className="inline-flex items-center gap-2 text-ink">
-                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                    <span className="font-medium">Open to internships & freelance</span>
+                    <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+                    <span className="font-medium">Available for work</span>
                   </span>
                   <span className="hidden sm:block mx-4 h-4 w-px bg-line" aria-hidden="true" />
-                  <span>Tangerang, Indonesia · Remote-ready</span>
-                  <a href="/resume.pdf" target="_blank" rel="noreferrer" className="sm:ml-auto text-ink font-semibold link-underline-fade w-fit">
-                    Download CV
-                  </a>
+                  <span className="text-muted">Tangerang, Indonesia · Remote Ready</span>
                 </div>
               </motion.div>
 
-              {/* Icon marquee strip */}
+              {/* Tech pill marquee */}
               <motion.div custom={6} variants={fadeUp} initial="hidden" animate="visible" className="mt-8 max-w-[580px] overflow-hidden">
                 <div className="marquee-mask">
-                  <div className="flex w-max items-center gap-6 animate-marquee-x">
-                    {[...ICONS, ...ICONS, ...ICONS].map((name, i) => (
-                      <img
-                        key={name + i}
-                        src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${name}/${name}-original.svg`}
-                        alt=""
-                        className="h-5 w-5 sm:h-6 sm:w-6 object-contain opacity-25 hover:opacity-60 transition-opacity duration-300"
-                        loading="lazy"
-                      />
+                  <div className="flex w-max items-center gap-3 animate-marquee-x">
+                    {[...TECH, ...TECH, ...TECH].map((t, i) => (
+                      <span
+                        key={t.name + i}
+                        className="whitespace-nowrap rounded-full bg-surface border border-line px-4 py-2 font-mono text-[12px] text-muted inline-flex items-center gap-2"
+                      >
+                        <img src={t.icon} alt="" className={`h-4 w-4 object-contain shrink-0${t.invert ? ' invert' : ''}`} loading="lazy" />
+                        {t.name}
+                      </span>
                     ))}
                   </div>
                 </div>
@@ -109,21 +101,21 @@ const Hero = () => {
                   initial={{ opacity: 0, y: 24, scale: 0.98 }}
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   transition={{ delay: 0.25, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-                  className="rounded-2xl overflow-hidden bg-white border border-line shadow-card"
+                  className="rounded-2xl overflow-hidden bg-[#1E1E1E] border border-line"
                 >
-                  <img src="/foto-anda.jpg" alt="Muhammad Sayyid Murtaja" className="w-full aspect-[4/5] object-cover object-top" onError={(e) => (e.currentTarget.src = '/sayyid_murtaja-removebg-preview.png')} loading="eager" />
+                  <img src="/wisuda.JPG" alt="Muhammad Sayyid Murtaja — graduation photo" className="w-full h-auto block" onError={(e) => (e.currentTarget.src = '/foto-anda.jpg')} loading="eager" />
+                  <div className="p-5 text-center border-t border-line">
+                    <p className="text-[13px] font-semibold text-ink leading-snug">Muhammad Sayyid Murtaja — Fullstack Developer</p>
+                  </div>
                 </motion.div>
                 <motion.div
                   initial={{ opacity: 0, y: 12 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.75, duration: 0.5 }}
-                  className="absolute -bottom-5 left-3 right-3 sm:left-4 sm:right-auto bg-white border border-line rounded-xl shadow-card px-4 py-3 flex items-center gap-3"
+                  className="absolute -bottom-5 left-3 right-3 sm:left-4 sm:right-auto bg-surface border border-line rounded-full px-4 py-2.5 flex items-center gap-2.5 w-fit"
                 >
-                  <span className="h-8 w-8 grid place-items-center rounded-lg bg-surface border border-line text-sm" aria-hidden="true">◧</span>
-                  <div className="min-w-0">
-                    <p className="text-[13px] font-semibold text-ink leading-tight truncate">kesatria.wiratek.id · LMS</p>
-                    <p className="text-[11px] text-caption">NestJS · PostgreSQL · Handlebars</p>
-                  </div>
+                  <span className="text-accent text-sm" aria-hidden="true">◧</span>
+                  <p className="font-mono text-[12px] text-muted whitespace-nowrap">Building Modern Web Apps, End to End</p>
                 </motion.div>
               </div>
             </motion.div>

@@ -1,0 +1,4199 @@
+{
+  "version": "2.17",
+  "children": [
+    {
+      "type": "frame",
+      "id": "cIgB6",
+      "x": -1348,
+      "y": -294,
+      "name": "Portfolio - Murtaja Redesign",
+      "clip": true,
+      "width": 1440,
+      "fill": "$p-bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "J1B0A",
+          "name": "Nav",
+          "width": "fill_container",
+          "fill": "$p-bg",
+          "padding": [
+            18,
+            48
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "H3AJRG",
+              "name": "Logo",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ubL4C",
+                  "name": "Logo light",
+                  "fill": "$p-text",
+                  "content": "sayyid",
+                  "fontFamily": "$p-font-body",
+                  "fontSize": 19,
+                  "fontWeight": "300"
+                },
+                {
+                  "type": "text",
+                  "id": "olR5y",
+                  "name": "Logo bold",
+                  "fill": "$p-text",
+                  "content": "murtaja",
+                  "fontFamily": "$p-font-head",
+                  "fontSize": 19,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "vZNUa",
+                  "name": "Tag",
+                  "fill": "$p-muted",
+                  "content": "PORTFOLIO",
+                  "fontFamily": "$p-font-mono",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jBYhh",
+              "name": "Links",
+              "gap": 28,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "iG4rH",
+                  "name": "L Home",
+                  "fill": "$p-text",
+                  "content": "Home",
+                  "fontFamily": "$p-font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "cN3do",
+                  "name": "L About",
+                  "fill": "$p-muted",
+                  "content": "About",
+                  "fontFamily": "$p-font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Q3xzB0",
+                  "name": "L Experience",
+                  "fill": "$p-muted",
+                  "content": "Experience",
+                  "fontFamily": "$p-font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "W6Nn7C",
+                  "name": "L Skills",
+                  "fill": "$p-muted",
+                  "content": "Skills",
+                  "fontFamily": "$p-font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "dFs6G",
+                  "name": "L Projects",
+                  "fill": "$p-muted",
+                  "content": "Projects",
+                  "fontFamily": "$p-font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "yXtLB",
+                  "name": "L Resume",
+                  "fill": "$p-muted",
+                  "content": "Resume",
+                  "fontFamily": "$p-font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "uwMt9",
+                  "name": "L Contact",
+                  "fill": "$p-muted",
+                  "content": "Contact",
+                  "fontFamily": "$p-font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "gOG3U",
+              "name": "Nav CTA",
+              "fill": "$p-accent",
+              "cornerRadius": 8,
+              "padding": [
+                12,
+                22
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "TZYX6",
+                  "name": "Get",
+                  "fill": "#0F0F0F",
+                  "content": "Get in Touch",
+                  "fontFamily": "$p-font-body",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "GLiKI",
+          "name": "Hero",
+          "width": "fill_container",
+          "fill": "$p-bg",
+          "gap": 48,
+          "padding": [
+            64,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "Y8UQbP",
+              "name": "Hero left",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Wn2hU",
+                  "name": "Eyebrow",
+                  "fill": "$p-accent",
+                  "content": "— MUHAMMAD SAYYID MURTAJA · FULLSTACK DEVELOPER",
+                  "fontFamily": "$p-font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "P5ejs",
+                  "name": "H1",
+                  "fill": "$p-text",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "I build modern web apps, end to end.",
+                  "lineHeight": 0.98,
+                  "fontFamily": "$p-font-head",
+                  "fontSize": 68,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "RGGLb",
+                  "name": "Desc",
+                  "fill": "$p-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Fullstack Developer experienced across the web ecosystem websites, web apps, dashboards, CMS and AI powered features, built with React, Next.js, NestJS and PostgreSQL.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "$p-font-body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "biHUl",
+                  "name": "Creds",
+                  "fill": "$p-text",
+                  "content": "RevoU Certified · 5+ Projects Completed · Open to Work",
+                  "fontFamily": "$p-font-mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "UIJA8",
+                  "name": "CTA row",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Hzris",
+                      "name": "Primary",
+                      "fill": "$p-accent",
+                      "cornerRadius": 8,
+                      "padding": [
+                        14,
+                        28
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Y7vked",
+                          "name": "T",
+                          "fill": "#0F0F0F",
+                          "content": "Explore Projects →",
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "cfNwz",
+                      "name": "Secondary",
+                      "fill": "$p-surface",
+                      "cornerRadius": 8,
+                      "stroke": "$p-border",
+                      "strokeWidth": 1,
+                      "padding": [
+                        14,
+                        28
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "EY0mK",
+                          "name": "T",
+                          "fill": "$p-text",
+                          "content": "View Experience",
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "c8jpJ",
+                  "name": "Meta",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "yu5Wk",
+                      "name": "Open",
+                      "fill": "$p-accent",
+                      "content": "● Available for work",
+                      "fontFamily": "$p-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "vpL6w",
+                      "name": "Loc",
+                      "fill": "$p-muted",
+                      "content": "Tangerang, Indonesia · Remote Ready",
+                      "fontFamily": "$p-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "aS9Ox",
+                  "name": "Tech marquee",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "sPjii",
+                      "name": "Pill",
+                      "fill": "$p-surface",
+                      "cornerRadius": 20,
+                      "stroke": "$p-border",
+                      "strokeWidth": 1,
+                      "padding": [
+                        8,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "sFV8U",
+                          "name": "TT",
+                          "fill": "$p-muted",
+                          "content": "React",
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "iA8QV",
+                      "name": "Pill",
+                      "fill": "$p-surface",
+                      "cornerRadius": 20,
+                      "stroke": "$p-border",
+                      "strokeWidth": 1,
+                      "padding": [
+                        8,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jBbqA",
+                          "name": "TT",
+                          "fill": "$p-muted",
+                          "content": "Next.js",
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "IYOhC",
+                      "name": "Pill",
+                      "fill": "$p-surface",
+                      "cornerRadius": 20,
+                      "stroke": "$p-border",
+                      "strokeWidth": 1,
+                      "padding": [
+                        8,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Vkqds",
+                          "name": "TT",
+                          "fill": "$p-muted",
+                          "content": "NestJS",
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CXbRq",
+                      "name": "Pill",
+                      "fill": "$p-surface",
+                      "cornerRadius": 20,
+                      "stroke": "$p-border",
+                      "strokeWidth": 1,
+                      "padding": [
+                        8,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "R93Qbc",
+                          "name": "TT",
+                          "fill": "$p-muted",
+                          "content": "PostgreSQL",
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "x2Qv0w",
+                      "name": "Pill",
+                      "fill": "$p-surface",
+                      "cornerRadius": 20,
+                      "stroke": "$p-border",
+                      "strokeWidth": 1,
+                      "padding": [
+                        8,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "gNjgi",
+                          "name": "TT",
+                          "fill": "$p-muted",
+                          "content": "Tailwind",
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "iuJva",
+                      "name": "Pill",
+                      "fill": "$p-surface",
+                      "cornerRadius": 20,
+                      "stroke": "$p-border",
+                      "strokeWidth": 1,
+                      "padding": [
+                        8,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "E1OTp4",
+                          "name": "TT",
+                          "fill": "$p-muted",
+                          "content": "Flutter",
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "N5rvOg",
+                      "name": "Pill",
+                      "fill": "$p-surface",
+                      "cornerRadius": 20,
+                      "stroke": "$p-border",
+                      "strokeWidth": 1,
+                      "padding": [
+                        8,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "H3Wxy",
+                          "name": "TT",
+                          "fill": "$p-muted",
+                          "content": "WordPress",
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "T7WJq",
+                      "name": "Pill",
+                      "fill": "$p-surface",
+                      "cornerRadius": 20,
+                      "stroke": "$p-border",
+                      "strokeWidth": 1,
+                      "padding": [
+                        8,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "RJDx5",
+                          "name": "TT",
+                          "fill": "$p-muted",
+                          "content": "Python",
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "kfU6L",
+              "name": "Hero right",
+              "clip": true,
+              "width": 380,
+              "fill": "$p-surface",
+              "cornerRadius": 16,
+              "stroke": "$p-border",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "d3oYfw",
+                  "name": "Photo block",
+                  "width": "fill_container",
+                  "height": 440,
+                  "fill": "#1E1E1E",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 24,
+                  "justifyContent": "end",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "GMcc7",
+                      "name": "SM",
+                      "fill": "#2E2E2E",
+                      "content": "SM",
+                      "fontFamily": "$p-font-head",
+                      "fontSize": 88,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "xWw4l",
+                      "name": "Cap",
+                      "fill": "$p-text",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Muhammad Sayyid Murtaja — Fullstack Developer",
+                      "fontFamily": "$p-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "l3gtFX",
+                  "name": "LMS chip",
+                  "width": "fill_container",
+                  "fill": "$p-card",
+                  "gap": 10,
+                  "padding": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "JPD3a",
+                      "name": "Chip",
+                      "fill": "$p-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "◧  Building Modern Web Apps, End to End",
+                      "fontFamily": "$p-font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "d94i3",
+          "name": "About",
+          "width": "fill_container",
+          "fill": "$p-surface",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            72,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "as0AD",
+              "name": "About top",
+              "width": "fill_container",
+              "gap": 40,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Cv9bk",
+                  "name": "About left",
+                  "width": 380,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "y0brzs",
+                      "name": "About photo",
+                      "reusable": true,
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "pqt",
+                        "link": "https://unsplash.com/@pqt",
+                        "author": "Austin P"
+                      },
+                      "clip": true,
+                      "width": "fill_container",
+                      "height": 520,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1558565701-31805fdd5c64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzOTQ1NzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 16,
+                      "stroke": "$p-accent",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "padding": 16,
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "A2g4fp",
+                          "name": "Top row",
+                          "width": "fill_container",
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "r6by5",
+                              "name": "Loc",
+                              "fill": "#FFFFFF",
+                              "content": "TNG — ID",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "Gpzfz",
+                              "name": "Dot",
+                              "width": 10,
+                              "height": 10,
+                              "fill": "$p-accent",
+                              "cornerRadius": 5
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "jrG3t",
+                          "name": "Bottom card",
+                          "width": "fill_container",
+                          "fill": "#0F0F0F",
+                          "cornerRadius": 12,
+                          "layout": "vertical",
+                          "gap": 4,
+                          "padding": 14,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "lsjjf",
+                              "name": "Name",
+                              "fill": "#FFFFFF",
+                              "content": "M. Sayyid Murtaja",
+                              "fontFamily": "$p-font-body",
+                              "fontSize": 14,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "m2fJv4",
+                              "name": "Role",
+                              "fill": "$p-accent",
+                              "content": "Fullstack Developer · 2+ yrs",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "XSCHE",
+                      "name": "Photo meta",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jpRQ2",
+                          "name": "L",
+                          "fill": "$p-accent",
+                          "content": "● Available for work",
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "b8DLo",
+                          "name": "R",
+                          "fill": "$p-muted",
+                          "content": "2022 — 2026",
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "v603t",
+                  "name": "About right",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "b8KGR",
+                      "name": "Eyebrow",
+                      "fill": "$p-accent",
+                      "content": "— ABOUT",
+                      "fontFamily": "$p-font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "TwQYl",
+                      "name": "Title",
+                      "fill": "$p-text",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "About Me",
+                      "lineHeight": 1.05,
+                      "fontFamily": "$p-font-head",
+                      "fontSize": 40,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "o58QRi",
+                      "name": "Para1",
+                      "fill": "#D4D4D4",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "I'm Muhammad Sayyid Murtaja, a Fullstack Developer focused on building clean, fast and scalable web applications from UI to API to database.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$p-font-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "qrWwH",
+                      "name": "Para2",
+                      "fill": "$p-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "My background includes Fullstack training (RevoU), JavaScript & Next.js (Kesatria Academy), WebGIS and WebGIS 3D. I work with React, Next.js on the frontend and NestJS, Laravel, Flask on the backend.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$p-font-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Tzftf",
+                      "name": "Para3",
+                      "fill": "$p-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "I have hands-on experience as a Website Developer building and maintaining websites, web applications and dashboards, and supporting production features used by real users.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$p-font-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Heo1X",
+                      "name": "Divider",
+                      "width": "fill_container",
+                      "height": 1,
+                      "fill": "$p-border"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "wRyAV",
+                      "name": "Info row",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "G0zw9t",
+                          "name": "EMAIL",
+                          "width": "fill_container",
+                          "fill": "$p-bg",
+                          "cornerRadius": 10,
+                          "stroke": "$p-border",
+                          "strokeWidth": 1,
+                          "layout": "vertical",
+                          "gap": 4,
+                          "padding": 14,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Fqi48",
+                              "name": "H",
+                              "fill": "$p-faint",
+                              "content": "EMAIL",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "T5dWP",
+                              "name": "V",
+                              "fill": "$p-text",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "sayyid.tw@gmail.com",
+                              "fontFamily": "$p-font-body",
+                              "fontSize": 11,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "aO9Vx",
+                          "name": "BASE",
+                          "width": "fill_container",
+                          "fill": "$p-bg",
+                          "cornerRadius": 10,
+                          "stroke": "$p-border",
+                          "strokeWidth": 1,
+                          "layout": "vertical",
+                          "gap": 4,
+                          "padding": 14,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "juVqn",
+                              "name": "H",
+                              "fill": "$p-faint",
+                              "content": "BASE",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "KY3bk",
+                              "name": "V",
+                              "fill": "$p-text",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Tangerang · Remote Ready",
+                              "fontFamily": "$p-font-body",
+                              "fontSize": 11,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "tz4TG",
+                          "name": "FOCUS",
+                          "width": "fill_container",
+                          "fill": "$p-bg",
+                          "cornerRadius": 10,
+                          "stroke": "$p-border",
+                          "strokeWidth": 1,
+                          "layout": "vertical",
+                          "gap": 4,
+                          "padding": 12,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "bYc9R",
+                              "name": "H",
+                              "fill": "$p-faint",
+                              "content": "FOCUS",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "dOc70",
+                              "name": "V",
+                              "fill": "$p-text",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "React · NestJS · Postgres",
+                              "fontFamily": "$p-font-body",
+                              "fontSize": 11,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mlpmC",
+                      "name": "Stats",
+                      "width": "fill_container",
+                      "gap": 24,
+                      "padding": [
+                        4,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "on0S1",
+                          "name": "Stat 5",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "McTAl",
+                              "name": "N",
+                              "fill": "$p-text",
+                              "content": "5",
+                              "fontFamily": "$p-font-head",
+                              "fontSize": 22,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "U0mmT9",
+                              "name": "L",
+                              "fill": "$p-muted",
+                              "content": "Projects",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "VNEdd",
+                          "name": "Stat 5+",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "zgIVF",
+                              "name": "N",
+                              "fill": "$p-text",
+                              "content": "5+",
+                              "fontFamily": "$p-font-head",
+                              "fontSize": 22,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "n0tLL",
+                              "name": "L",
+                              "fill": "$p-muted",
+                              "content": "Trainings",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Mq4da",
+                          "name": "Stat 2+",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "YScBi",
+                              "name": "N",
+                              "fill": "$p-text",
+                              "content": "2+",
+                              "fontFamily": "$p-font-head",
+                              "fontSize": 22,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "jxvbW",
+                              "name": "L",
+                              "fill": "$p-muted",
+                              "content": "Years",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Vm1Ip",
+                      "name": "Actions",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "D4yrL",
+                          "name": "Primary",
+                          "fill": "$p-accent",
+                          "cornerRadius": 8,
+                          "padding": [
+                            12,
+                            22
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "FYj5k",
+                              "name": "T",
+                              "fill": "#0F0F0F",
+                              "content": "Download CV →",
+                              "fontFamily": "$p-font-body",
+                              "fontSize": 13,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "DKl0I",
+                          "name": "Link",
+                          "fill": "$p-muted",
+                          "content": "sayyid.tw@gmail.com",
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "PloTG",
+          "name": "Experience",
+          "width": "fill_container",
+          "fill": "$p-bg",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            72,
+            80
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "F7oj8i",
+              "name": "Eyebrow",
+              "fill": "$p-accent",
+              "content": "· EXPERIENCE",
+              "fontFamily": "$p-font-mono",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "mCU6C",
+              "name": "Title",
+              "fill": "$p-text",
+              "content": "Work Experience",
+              "fontFamily": "$p-font-head",
+              "fontSize": 40,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "vkq4g",
+              "name": "Sub",
+              "fill": "$p-muted",
+              "content": "My professional journey · work, education and training.",
+              "fontFamily": "$p-font-body",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "WUUoX",
+              "name": "Scroll Progress",
+              "width": "fill_container",
+              "fill": "$p-surface",
+              "cornerRadius": 12,
+              "stroke": "$p-border",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Yc9GU",
+                  "name": "ProgressTop",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "utpeS",
+                      "name": "ProgressLabel",
+                      "fill": "$p-muted",
+                      "content": "CAREER PROGRESS · 7 STAGES",
+                      "fontFamily": "$p-font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fsraT",
+                      "name": "ProgressPct",
+                      "fill": "$p-accent",
+                      "content": "TIER 01-02 ACTIVE",
+                      "fontFamily": "$p-font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "GkcbI",
+              "name": "Timeline",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "tiwUx",
+                  "name": "Tier 03 - Univ",
+                  "width": "fill_container",
+                  "fill": "$p-surface",
+                  "cornerRadius": 12,
+                  "stroke": "$p-border",
+                  "strokeWidth": 1,
+                  "gap": 16,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "LGqx7",
+                      "name": "Rail",
+                      "width": 20,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "v22zq",
+                          "name": "Dot",
+                          "fill": "$p-muted",
+                          "width": 12,
+                          "height": 12
+                        },
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 2,
+                          "id": "iYQU5",
+                          "name": "Line",
+                          "fill": "$p-border",
+                          "width": 2,
+                          "height": 64
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "g7H2cd",
+                      "name": "Body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "juZe6",
+                          "name": "TopRow",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "s12xY",
+                              "name": "TierBadge",
+                              "fill": "$p-accent-dim",
+                              "cornerRadius": 20,
+                              "stroke": "$p-accent",
+                              "strokeWidth": 1,
+                              "padding": [
+                                4,
+                                10
+                              ],
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "bknvC",
+                                  "name": "Tier",
+                                  "fill": "$p-accent",
+                                  "content": "01",
+                                  "fontFamily": "$p-font-mono",
+                                  "fontSize": 10,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "SIdKe",
+                              "name": "Date",
+                              "fill": "$p-accent",
+                              "content": "Aug 2022 — Aug 2026",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "snxBn",
+                          "name": "Role",
+                          "fill": "$p-text",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Universitas Jenderal Soedirman · Marine Science",
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "M6VIS",
+                          "name": "Desc",
+                          "fill": "$p-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Bachelor study + athletics — 3rd Place Rector's Cup 2024 Futsal.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "D5tXp",
+                  "name": "Tier 02 - BEM",
+                  "width": "fill_container",
+                  "fill": "$p-surface",
+                  "cornerRadius": 12,
+                  "stroke": "$p-border",
+                  "strokeWidth": 1,
+                  "gap": 16,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ZUxvx",
+                      "name": "Rail",
+                      "width": 20,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "Cz1CP",
+                          "name": "Dot",
+                          "fill": "$p-accent",
+                          "width": 12,
+                          "height": 12
+                        },
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 2,
+                          "id": "IB3lQ",
+                          "name": "Line",
+                          "fill": "$p-accent",
+                          "width": 2,
+                          "height": 64
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "M7SuV",
+                      "name": "Body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "n930L",
+                          "name": "TopRow",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "N0jTm",
+                              "name": "TierBadge",
+                              "fill": "$p-accent-dim",
+                              "cornerRadius": 20,
+                              "stroke": "$p-accent",
+                              "strokeWidth": 1,
+                              "padding": [
+                                4,
+                                10
+                              ],
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "xQjzq",
+                                  "name": "Tier",
+                                  "fill": "$p-accent",
+                                  "content": "02",
+                                  "fontFamily": "$p-font-mono",
+                                  "fontSize": 10,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "HQYLB",
+                              "name": "Date",
+                              "fill": "$p-accent",
+                              "content": "Mar 2023 — Dec 2023",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "cMEjT",
+                          "name": "Role",
+                          "fill": "$p-text",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Student Executive Board (BEM) · Staff",
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "hUUcG",
+                          "name": "Desc",
+                          "fill": "$p-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Organized PKKMB 2024 onboarding, led internal upgrading, event staff for 2023.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Ky4vS",
+                  "name": "Tier 04A - RevoU — Fullstack Developer",
+                  "width": "fill_container",
+                  "fill": "$p-surface",
+                  "cornerRadius": 12,
+                  "stroke": "$p-border",
+                  "strokeWidth": 1,
+                  "gap": 16,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "vqGd8",
+                      "name": "Rail",
+                      "width": 20,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "jPthI",
+                          "name": "Dot",
+                          "fill": "$p-accent",
+                          "width": 12,
+                          "height": 12
+                        },
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 2,
+                          "id": "mrdFG",
+                          "name": "Line",
+                          "fill": "$p-border",
+                          "width": 2,
+                          "height": 84
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "RXuxI",
+                      "name": "Body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "IBeUk",
+                          "name": "TopRow",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "jkGox",
+                              "name": "TierBadge",
+                              "fill": "$p-accent-dim",
+                              "cornerRadius": 20,
+                              "stroke": "$p-accent",
+                              "strokeWidth": 1,
+                              "padding": [
+                                4,
+                                10
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "RDNy4",
+                                  "name": "Tier",
+                                  "fill": "$p-accent",
+                                  "content": "03A",
+                                  "fontFamily": "$p-font-mono",
+                                  "fontSize": 10,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "s3JG7w",
+                              "name": "Date",
+                              "fill": "$p-accent",
+                              "content": "2025",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "WoLbg",
+                              "name": "Status",
+                              "fill": "$p-muted",
+                              "content": "· CERTIFIED",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "DHq6V",
+                          "name": "Role",
+                          "fill": "$p-text",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "RevoU · Fullstack Developer",
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "cqqb2",
+                          "name": "Prov",
+                          "fill": "$p-faint",
+                          "content": "REVOU · CERTIFIED",
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "nsRf7",
+                          "name": "Desc",
+                          "fill": "$p-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "End-to-end web apps: React frontend, NestJS backend, PostgreSQL, REST APIs and deployment.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "W4g8k4",
+                          "name": "Cert row",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "uSnpq",
+                              "name": "View cert btn",
+                              "fill": "$p-accent",
+                              "cornerRadius": 8,
+                              "padding": [
+                                10,
+                                18
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "F24MFY",
+                                  "name": "T",
+                                  "fill": "#0F0F0F",
+                                  "content": "View certificate →",
+                                  "fontFamily": "$p-font-body",
+                                  "fontSize": 12,
+                                  "fontWeight": "700"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "B1ExK",
+                              "name": "Cred",
+                              "fill": "$p-faint",
+                              "content": "ID REVOU-FS-2025-001",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ppjWK",
+                  "name": "Tier 04B - Kesatria Academy — JavaScript & Next.js",
+                  "width": "fill_container",
+                  "fill": "$p-surface",
+                  "cornerRadius": 12,
+                  "stroke": "$p-border",
+                  "strokeWidth": 1,
+                  "gap": 16,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "aez4U",
+                      "name": "Rail",
+                      "width": 20,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "zs7ar",
+                          "name": "Dot",
+                          "fill": "$p-accent",
+                          "width": 12,
+                          "height": 12
+                        },
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 2,
+                          "id": "L9atkV",
+                          "name": "Line",
+                          "fill": "$p-border",
+                          "width": 2,
+                          "height": 84
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "XAO6p",
+                      "name": "Body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "kChOn",
+                          "name": "TopRow",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "PbmHX",
+                              "name": "TierBadge",
+                              "fill": "$p-accent-dim",
+                              "cornerRadius": 20,
+                              "stroke": "$p-accent",
+                              "strokeWidth": 1,
+                              "padding": [
+                                4,
+                                10
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "bwX5B",
+                                  "name": "Tier",
+                                  "fill": "$p-accent",
+                                  "content": "03B",
+                                  "fontFamily": "$p-font-mono",
+                                  "fontSize": 10,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "xnAFw",
+                              "name": "Date",
+                              "fill": "$p-accent",
+                              "content": "2024 — 2025",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "HEQrZ",
+                              "name": "Status",
+                              "fill": "$p-muted",
+                              "content": "· COMPLETED",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "cAwel",
+                          "name": "Role",
+                          "fill": "$p-text",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Kesatria Academy · JavaScript & Next.js",
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "fA5bQ",
+                          "name": "Prov",
+                          "fill": "$p-faint",
+                          "content": "KESATRIA ACADEMY · COMPLETED",
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "eV4BS",
+                          "name": "Desc",
+                          "fill": "$p-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Modern JS, React patterns, Next.js App Router, SSR/SSG and performance basics.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "LSLnS",
+                          "name": "Cert row",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "uUwSv",
+                              "name": "View cert btn",
+                              "fill": "$p-accent",
+                              "cornerRadius": 8,
+                              "padding": [
+                                10,
+                                18
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "fFwkb",
+                                  "name": "T",
+                                  "fill": "#0F0F0F",
+                                  "content": "View certificate →",
+                                  "fontFamily": "$p-font-body",
+                                  "fontSize": 12,
+                                  "fontWeight": "700"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "tJZNL",
+                              "name": "Cred",
+                              "fill": "$p-faint",
+                              "content": "ID KES-JS-2024-118",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "yUTYh",
+                  "name": "Tier 04C - Geosoftware — WebGIS",
+                  "width": "fill_container",
+                  "fill": "$p-surface",
+                  "cornerRadius": 12,
+                  "stroke": "$p-border",
+                  "strokeWidth": 1,
+                  "gap": 16,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "G2gh3j",
+                      "name": "Rail",
+                      "width": 20,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "K3khsi",
+                          "name": "Dot",
+                          "fill": "$p-muted",
+                          "width": 12,
+                          "height": 12
+                        },
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 2,
+                          "id": "bNrAw",
+                          "name": "Line",
+                          "fill": "$p-border",
+                          "width": 2,
+                          "height": 84
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZfIIg",
+                      "name": "Body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "joqUV",
+                          "name": "TopRow",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "tClou",
+                              "name": "TierBadge",
+                              "fill": "$p-accent-dim",
+                              "cornerRadius": 20,
+                              "stroke": "$p-accent",
+                              "strokeWidth": 1,
+                              "padding": [
+                                4,
+                                10
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "DQEOK",
+                                  "name": "Tier",
+                                  "fill": "$p-accent",
+                                  "content": "03C",
+                                  "fontFamily": "$p-font-mono",
+                                  "fontSize": 10,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "mjSUE",
+                              "name": "Date",
+                              "fill": "$p-accent",
+                              "content": "2024",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "Il9dU",
+                              "name": "Status",
+                              "fill": "$p-muted",
+                              "content": "· COMPLETED",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "PSjXD",
+                          "name": "Role",
+                          "fill": "$p-text",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Geosoftware · WebGIS",
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "j7TQkj",
+                          "name": "Prov",
+                          "fill": "$p-faint",
+                          "content": "GEOSOFTWARE · COMPLETED",
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "h3KcTS",
+                          "name": "Desc",
+                          "fill": "$p-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Web mapping: Leaflet/Mapbox, spatial data, layers and interactive GIS dashboards.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "AXTa8",
+                          "name": "Cert row",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "cyU1a",
+                              "name": "View cert btn",
+                              "fill": "$p-accent",
+                              "cornerRadius": 8,
+                              "padding": [
+                                10,
+                                18
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "dudRi",
+                                  "name": "T",
+                                  "fill": "#0F0F0F",
+                                  "content": "View certificate →",
+                                  "fontFamily": "$p-font-body",
+                                  "fontSize": 12,
+                                  "fontWeight": "700"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "NTgUv",
+                              "name": "Cred",
+                              "fill": "$p-faint",
+                              "content": "ID GEO-WEB-2024-042",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "MkptJ",
+                  "name": "Tier 04D - GIM — WebGIS 3D",
+                  "width": "fill_container",
+                  "fill": "$p-surface",
+                  "cornerRadius": 12,
+                  "stroke": "$p-border",
+                  "strokeWidth": 1,
+                  "gap": 16,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "tiP5T",
+                      "name": "Rail",
+                      "width": 20,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "wMao2",
+                          "name": "Dot",
+                          "fill": "$p-muted",
+                          "width": 12,
+                          "height": 12
+                        },
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 2,
+                          "id": "wDWRF",
+                          "name": "Line",
+                          "fill": "$p-border",
+                          "width": 2,
+                          "height": 84
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ilMQQ",
+                      "name": "Body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "v2VWFp",
+                          "name": "TopRow",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "b57b2",
+                              "name": "TierBadge",
+                              "fill": "$p-accent-dim",
+                              "cornerRadius": 20,
+                              "stroke": "$p-accent",
+                              "strokeWidth": 1,
+                              "padding": [
+                                4,
+                                10
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "u6OvYl",
+                                  "name": "Tier",
+                                  "fill": "$p-accent",
+                                  "content": "03D",
+                                  "fontFamily": "$p-font-mono",
+                                  "fontSize": 10,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "alFOY",
+                              "name": "Date",
+                              "fill": "$p-accent",
+                              "content": "2024 — 2026",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "kWEp4",
+                              "name": "Status",
+                              "fill": "$p-muted",
+                              "content": "· IN PROGRESS",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "coCWd",
+                          "name": "Role",
+                          "fill": "$p-text",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "GIM · WebGIS 3D",
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "t5CazR",
+                          "name": "Prov",
+                          "fill": "$p-faint",
+                          "content": "GIM · IN PROGRESS",
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "jKdKM",
+                          "name": "Desc",
+                          "fill": "$p-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "3D geospatial: Cesium/Three.js scenes, terrain, 3D tiles and spatial visualization.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "jUwBo",
+                          "name": "Cert row",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "SBEjo",
+                              "name": "View cert btn",
+                              "fill": "$p-accent",
+                              "cornerRadius": 8,
+                              "padding": [
+                                10,
+                                18
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "k7seLI",
+                                  "name": "T",
+                                  "fill": "#0F0F0F",
+                                  "content": "View certificate →",
+                                  "fontFamily": "$p-font-body",
+                                  "fontSize": 12,
+                                  "fontWeight": "700"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "J7aW9s",
+                              "name": "Cred",
+                              "fill": "$p-faint",
+                              "content": "ID GIM-3D-2026-007",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "eTgVM",
+                  "name": "Tier 01 - Fullstack",
+                  "width": "fill_container",
+                  "fill": "$p-surface",
+                  "cornerRadius": 12,
+                  "stroke": "$p-border",
+                  "strokeWidth": 1,
+                  "gap": 16,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "nyvCQ",
+                      "name": "Rail",
+                      "width": 20,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "OEQ5v",
+                          "name": "Dot",
+                          "fill": "$p-accent",
+                          "width": 12,
+                          "height": 12
+                        },
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 2,
+                          "id": "AR4E5",
+                          "name": "Line",
+                          "fill": "$p-accent",
+                          "width": 2,
+                          "height": 64
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "pFWZI",
+                      "name": "Body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "UPbdZ",
+                          "name": "TopRow",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "dkXhr",
+                              "name": "TierBadge",
+                              "fill": "$p-accent-dim",
+                              "cornerRadius": 20,
+                              "stroke": "$p-accent",
+                              "strokeWidth": 1,
+                              "padding": [
+                                4,
+                                10
+                              ],
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "D2Lf1w",
+                                  "name": "Tier",
+                                  "fill": "$p-accent",
+                                  "content": "04",
+                                  "fontFamily": "$p-font-mono",
+                                  "fontSize": 10,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "WWz9N",
+                              "name": "Date",
+                              "fill": "$p-accent",
+                              "content": "2025 — Present · Wiratek",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "k69sa4",
+                          "name": "Role",
+                          "fill": "$p-text",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Fullstack Developer Intern · Wiratek",
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Tk6aW",
+                          "name": "Desc",
+                          "fill": "$p-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Internship as Fullstack Developer at Wiratek: building and maintaining websites, web applications and dashboards with NestJS, PostgreSQL and Handlebars. Shipped frontend + backend features, database schemas and REST APIs.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "sXBdp",
+              "name": "Certificate Preview Modal",
+              "clip": true,
+              "width": "fill_container",
+              "fill": "$p-card",
+              "cornerRadius": 16,
+              "stroke": "$p-accent",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "R3k892",
+                  "name": "Modal top",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "padding": [
+                    14,
+                    20
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "y3EMp",
+                      "name": "T",
+                      "fill": "$p-accent",
+                      "content": "◉ CERTIFICATE PREVIEW · click state",
+                      "fontFamily": "$p-font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "e8PvM",
+                      "name": "X",
+                      "fill": "$p-muted",
+                      "content": "✕ CLOSE",
+                      "fontFamily": "$p-font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "x9pTmA",
+                  "name": "Modal body",
+                  "width": "fill_container",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "jyM7f",
+                      "name": "Cert image",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "nilsmerki",
+                        "link": "https://unsplash.com/@nilsmerki",
+                        "author": "Nils Merki"
+                      },
+                      "width": 520,
+                      "height": 420,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1783000043251-2a7966ef3fcf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzOTUwMzB8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 20,
+                      "justifyContent": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "R2GNz",
+                          "name": "Seal",
+                          "fill": "#FFFFFF",
+                          "content": "★ VERIFIED",
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "L5HHLp",
+                          "name": "Cap",
+                          "fill": "#FFFFFF",
+                          "content": "RevoU · Fullstack Developer · 2025",
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 13,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dMxEx",
+                      "name": "Cert detail",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 28,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "FjCz2",
+                          "name": "Label",
+                          "fill": "$p-faint",
+                          "content": "SELECTED CERTIFICATE",
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "C0JWn",
+                          "name": "Title",
+                          "fill": "$p-text",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "RevoU Fullstack Developer",
+                          "fontFamily": "$p-font-head",
+                          "fontSize": 28,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "gyxqz",
+                          "name": "Desc",
+                          "fill": "$p-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "This is the clicked state. Klik View certificate pada card mana pun, modal ini update: gambar sertifikat, nama, ID kredensial dan tombol verifikasi.",
+                          "lineHeight": 1.7,
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Fch6U",
+                          "name": "Cred",
+                          "fill": "$p-text",
+                          "content": "Credential ID: REVOU-FS-2025-001",
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Eb670",
+                          "name": "Btns",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "rEGrC",
+                              "name": "Verify",
+                              "fill": "$p-accent",
+                              "cornerRadius": 8,
+                              "padding": [
+                                12,
+                                22
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "u5MNoT",
+                                  "name": "T",
+                                  "fill": "#0F0F0F",
+                                  "content": "Verify →",
+                                  "fontFamily": "$p-font-body",
+                                  "fontSize": 13,
+                                  "fontWeight": "700"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "YWlxk",
+                              "name": "Download",
+                              "fill": "$p-bg",
+                              "cornerRadius": 8,
+                              "stroke": "$p-border",
+                              "strokeWidth": 1,
+                              "padding": [
+                                12,
+                                22
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "PuBGo",
+                                  "name": "T",
+                                  "fill": "$p-text",
+                                  "content": "Download PDF",
+                                  "fontFamily": "$p-font-body",
+                                  "fontSize": 13,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "e2CnDV",
+                          "name": "Other certs",
+                          "gap": 8,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "c4IieS",
+                              "name": "Thumb RevoU",
+                              "fill": "$p-accent-dim",
+                              "cornerRadius": 8,
+                              "stroke": "$p-accent",
+                              "strokeWidth": 1,
+                              "padding": [
+                                8,
+                                12
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "pUcHv",
+                                  "name": "T",
+                                  "fill": "$p-accent",
+                                  "content": "RevoU",
+                                  "fontFamily": "$p-font-mono",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "foBC0",
+                              "name": "Thumb Kesatria",
+                              "fill": "$p-bg",
+                              "cornerRadius": 8,
+                              "stroke": "$p-border",
+                              "strokeWidth": 1,
+                              "padding": [
+                                8,
+                                12
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "yNO0j",
+                                  "name": "T",
+                                  "fill": "$p-muted",
+                                  "content": "Kesatria",
+                                  "fontFamily": "$p-font-mono",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "l9jMu",
+                              "name": "Thumb Geosoftware",
+                              "fill": "$p-bg",
+                              "cornerRadius": 8,
+                              "stroke": "$p-border",
+                              "strokeWidth": 1,
+                              "padding": [
+                                8,
+                                12
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "e1IcK",
+                                  "name": "T",
+                                  "fill": "$p-muted",
+                                  "content": "Geosoftware",
+                                  "fontFamily": "$p-font-mono",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "Sjtwh",
+                              "name": "Thumb GIM",
+                              "fill": "$p-bg",
+                              "cornerRadius": 8,
+                              "stroke": "$p-border",
+                              "strokeWidth": 1,
+                              "padding": [
+                                8,
+                                12
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "B4oCE",
+                                  "name": "T",
+                                  "fill": "$p-muted",
+                                  "content": "GIM",
+                                  "fontFamily": "$p-font-mono",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "w2o4T",
+          "name": "Skills",
+          "width": "fill_container",
+          "fill": "$p-surface",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            72,
+            80
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "yMWJ3",
+              "name": "Eyebrow",
+              "fill": "$p-accent",
+              "content": "— SKILLS",
+              "textAlign": "center",
+              "fontFamily": "$p-font-mono",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "vjr7v",
+              "name": "Title",
+              "fill": "$p-text",
+              "content": "Skills & Expertise",
+              "textAlign": "center",
+              "fontFamily": "$p-font-head",
+              "fontSize": 38,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "RGS6l",
+              "name": "Sub",
+              "fill": "$p-muted",
+              "content": "Technologies I use to design, build and ship products.",
+              "textAlign": "center",
+              "fontFamily": "$p-font-body",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "G6ayCl",
+              "name": "Bento",
+              "width": "fill_container",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "j9rjiO",
+                  "name": "Bento left",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "CiZcL",
+                      "name": "Skill card",
+                      "width": "fill_container",
+                      "fill": "$p-bg",
+                      "cornerRadius": 12,
+                      "stroke": "$p-border",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "pOF43",
+                          "name": "Cat",
+                          "fill": "$p-text",
+                          "content": "Fullstack Web",
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "c4i4VB",
+                          "name": "Items",
+                          "fill": "$p-accent",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "React · Next.js · NestJS · PostgreSQL · Handlebars · MySQL",
+                          "lineHeight": 1.7,
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "lm8Zj",
+                          "name": "Note",
+                          "fill": "$p-muted",
+                          "content": "My daily stack for products & APIs",
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "HLrqw",
+                      "name": "Skill card",
+                      "width": "fill_container",
+                      "fill": "$p-bg",
+                      "cornerRadius": 12,
+                      "stroke": "$p-border",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "n6sYU",
+                          "name": "Cat",
+                          "fill": "$p-text",
+                          "content": "CMS & Client Sites",
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "CFWsl",
+                          "name": "Items",
+                          "fill": "$p-accent",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "WordPress · Elementor · Landing Pages · SEO · Speed",
+                          "lineHeight": 1.7,
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "qbB57",
+                          "name": "Note",
+                          "fill": "$p-muted",
+                          "content": "Easy-to-manage client websites",
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "wH7Wc",
+                  "name": "Bento right",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "lRzVF",
+                      "name": "Skill card",
+                      "width": "fill_container",
+                      "fill": "$p-bg",
+                      "cornerRadius": 12,
+                      "stroke": "$p-border",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "lCyUF",
+                          "name": "Cat",
+                          "fill": "$p-text",
+                          "content": "AI, Mobile & Backend",
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "o7xbR",
+                          "name": "Items",
+                          "fill": "$p-accent",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Python · Flask · Flutter · TensorFlow Lite · Laravel",
+                          "lineHeight": 1.7,
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "O2Ilc",
+                          "name": "Note",
+                          "fill": "$p-muted",
+                          "content": "AI features, mobile apps & APIs",
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "RU6QI",
+                      "name": "Skill card",
+                      "width": "fill_container",
+                      "fill": "$p-bg",
+                      "cornerRadius": 12,
+                      "stroke": "$p-border",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "zTW1T",
+                          "name": "Cat",
+                          "fill": "$p-text",
+                          "content": "Web Foundations",
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Fo237",
+                          "name": "Items",
+                          "fill": "$p-accent",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "HTML · CSS · JavaScript · Tailwind · Maps API · cPanel",
+                          "lineHeight": 1.7,
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "nGGdT",
+                          "name": "Note",
+                          "fill": "$p-muted",
+                          "content": "Clean, responsive interfaces",
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "TIOma",
+              "name": "Soft skills",
+              "width": "fill_container",
+              "fill": "#0A0A0A",
+              "cornerRadius": 12,
+              "stroke": "$p-border",
+              "strokeWidth": 1,
+              "gap": 20,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "K1ORUp",
+                  "name": "H",
+                  "fill": "$p-text",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Beyond code — Problem Solving · Teamwork · Communication · Fast Learning · Time Management",
+                  "lineHeight": 1.8,
+                  "fontFamily": "$p-font-mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "z3FXLE",
+          "name": "Projects",
+          "width": "fill_container",
+          "fill": "$p-bg",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            72,
+            80
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "Xw9EN",
+              "name": "Eyebrow",
+              "fill": "$p-accent",
+              "content": "— PROJECTS",
+              "fontFamily": "$p-font-mono",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "kODSJ",
+              "name": "Title",
+              "fill": "$p-text",
+              "textGrowth": "fixed-width",
+              "width": 700,
+              "content": "Featured Projects",
+              "fontFamily": "$p-font-head",
+              "fontSize": 40,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "O9utN",
+              "name": "Sub",
+              "fill": "$p-muted",
+              "content": "A selection of projects in fullstack development, AI and CMS — built to solve real problems.",
+              "fontFamily": "$p-font-body",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "DEU64",
+              "name": "Grid",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "VvKVA",
+                  "name": "Row",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "VnibT",
+                      "name": "Proj",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "$p-surface",
+                      "cornerRadius": 12,
+                      "stroke": "$p-border",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "u72JW",
+                          "name": "Thumb",
+                          "width": "fill_container",
+                          "height": 180,
+                          "fill": "#C8FF2E",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": 18,
+                          "justifyContent": "end",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "eMcgz",
+                              "name": "Tag",
+                              "fill": "#0F0F0F",
+                              "content": "FEATURED PROJECT",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "H6Nzr",
+                              "name": "Big",
+                              "fill": "#0F0F0F",
+                              "content": "Marine Tech",
+                              "fontFamily": "$p-font-head",
+                              "fontSize": 30,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "uiiNL",
+                          "name": "Body",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": 18,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "QXOqR",
+                              "name": "T",
+                              "fill": "$p-text",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Marine Tech Corporate Profile & Research Hub",
+                              "fontFamily": "$p-font-body",
+                              "fontSize": 15,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "P4lI1",
+                              "name": "D",
+                              "fill": "$p-muted",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Corporate website and research portal for marine technology.",
+                              "lineHeight": 1.6,
+                              "fontFamily": "$p-font-body",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "NLzDI",
+                              "name": "S",
+                              "fill": "$p-faint",
+                              "content": "Next.js · Tailwind · CMS",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "l0N7Lm",
+                              "name": "Link",
+                              "fill": "$p-accent",
+                              "content": "View Details →  Live Demo ↗",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "U4moRd",
+                      "name": "Proj",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "$p-surface",
+                      "cornerRadius": 12,
+                      "stroke": "$p-border",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "P3VWeV",
+                          "name": "Thumb",
+                          "width": "fill_container",
+                          "height": 180,
+                          "fill": "#232323",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": 18,
+                          "justifyContent": "end",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "G5eKt",
+                              "name": "Tag",
+                              "fill": "$p-accent",
+                              "content": "AI PROJECT · 2026",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "qMZon",
+                              "name": "Big",
+                              "fill": "$p-text",
+                              "content": "Intelligent Academic",
+                              "fontFamily": "$p-font-head",
+                              "fontSize": 30,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "syCRo",
+                          "name": "Body",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": 18,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "cPgbG",
+                              "name": "T",
+                              "fill": "$p-text",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Intelligent Academic Assistant: RAG Chatbot",
+                              "fontFamily": "$p-font-body",
+                              "fontSize": 15,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "aIk1M",
+                              "name": "D",
+                              "fill": "$p-muted",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "AI chatbot that answers from university documents in real time.",
+                              "lineHeight": 1.6,
+                              "fontFamily": "$p-font-body",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "vno7j",
+                              "name": "S",
+                              "fill": "$p-faint",
+                              "content": "Python · Flask · LangChain · HuggingFace",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "CL3Vd",
+                              "name": "Link",
+                              "fill": "$p-accent",
+                              "content": "View Details →  Live Demo ↗",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KrXhW",
+                  "name": "Row",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "H68c7H",
+                      "name": "Proj",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "$p-surface",
+                      "cornerRadius": 12,
+                      "stroke": "$p-border",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "vnynR",
+                          "name": "Thumb",
+                          "width": "fill_container",
+                          "height": 180,
+                          "fill": "#232323",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": 18,
+                          "justifyContent": "end",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "fb99n",
+                              "name": "Tag",
+                              "fill": "$p-accent",
+                              "content": "MOBILE · AI",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "D3hdZ",
+                              "name": "Big",
+                              "fill": "$p-text",
+                              "content": "Real-Time AI",
+                              "fontFamily": "$p-font-head",
+                              "fontSize": 30,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "POMYI",
+                          "name": "Body",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": 18,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "HeZC1",
+                              "name": "T",
+                              "fill": "$p-text",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Real-Time AI Object Detection App",
+                              "fontFamily": "$p-font-body",
+                              "fontSize": 15,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "laGJw",
+                              "name": "D",
+                              "fill": "$p-muted",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Mobile app for real-time object detection using on-device AI.",
+                              "lineHeight": 1.6,
+                              "fontFamily": "$p-font-body",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "o2AfQ",
+                              "name": "S",
+                              "fill": "$p-faint",
+                              "content": "Flutter · Dart · TensorFlow Lite",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "k0ch2y",
+                              "name": "Link",
+                              "fill": "$p-accent",
+                              "content": "View Details →  Live Demo ↗",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CiWxa",
+                      "name": "Proj",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "$p-surface",
+                      "cornerRadius": 12,
+                      "stroke": "$p-border",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "usfLy",
+                          "name": "Thumb",
+                          "width": "fill_container",
+                          "height": 180,
+                          "fill": "#1F1F1F",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": 18,
+                          "justifyContent": "end",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "in1If",
+                              "name": "Tag",
+                              "fill": "$p-accent",
+                              "content": "FULLSTACK · DASHBOARD",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "md8sb",
+                              "name": "Big",
+                              "fill": "$p-text",
+                              "content": "AWS Weather",
+                              "fontFamily": "$p-font-head",
+                              "fontSize": 30,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "siT7a",
+                          "name": "Body",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": 18,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "kKLI8",
+                              "name": "T",
+                              "fill": "$p-text",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "AWS Weather Monitoring Dashboard",
+                              "fontFamily": "$p-font-body",
+                              "fontSize": 15,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "HGMKm",
+                              "name": "D",
+                              "fill": "$p-muted",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Live dashboard for weather stations — temperature, wind and battery.",
+                              "lineHeight": 1.6,
+                              "fontFamily": "$p-font-body",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "d36BM",
+                              "name": "S",
+                              "fill": "$p-faint",
+                              "content": "Next.js · NestJS · MySQL",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "RJzRr",
+                              "name": "Link",
+                              "fill": "$p-accent",
+                              "content": "View Details →  Live Demo ↗",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kmB9f",
+                  "name": "Row",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Lh2Kd",
+                      "name": "Proj",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "$p-surface",
+                      "cornerRadius": 12,
+                      "stroke": "$p-border",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "DCFuk",
+                          "name": "Thumb",
+                          "width": "fill_container",
+                          "height": 180,
+                          "fill": "#232323",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": 18,
+                          "justifyContent": "end",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "t4rewq",
+                              "name": "Tag",
+                              "fill": "$p-accent",
+                              "content": "CLIENT WORK · 2025",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "nu0UU",
+                              "name": "Big",
+                              "fill": "$p-text",
+                              "content": "PT Biofer",
+                              "fontFamily": "$p-font-head",
+                              "fontSize": 30,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "VtihY",
+                          "name": "Body",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": 18,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "h6kBAt",
+                              "name": "T",
+                              "fill": "$p-text",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "PT Biofer Saintek: Company Website",
+                              "fontFamily": "$p-font-body",
+                              "fontSize": 15,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "X3Dbk8",
+                              "name": "D",
+                              "fill": "$p-muted",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Company profile website — fast, responsive and SEO-friendly.",
+                              "lineHeight": 1.6,
+                              "fontFamily": "$p-font-body",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "Tcvje",
+                              "name": "S",
+                              "fill": "$p-faint",
+                              "content": "WordPress · Elementor · SEO",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "Ud5h7",
+                              "name": "Link",
+                              "fill": "$p-accent",
+                              "content": "View Details →  Live Demo ↗",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "npZys",
+                      "name": "Proj",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "$p-surface",
+                      "cornerRadius": 12,
+                      "stroke": "$p-border",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Q3yxmS",
+                          "name": "Thumb",
+                          "width": "fill_container",
+                          "height": 180,
+                          "fill": "#232323",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": 18,
+                          "justifyContent": "end",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "QMuPF",
+                              "name": "Tag",
+                              "fill": "$p-accent",
+                              "content": "CLIENT WORK · 2025",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "n76KA",
+                              "name": "Big",
+                              "fill": "$p-text",
+                              "content": "Desa Wisata",
+                              "fontFamily": "$p-font-head",
+                              "fontSize": 30,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "z88w7",
+                          "name": "Body",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": 18,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "RZTkX",
+                              "name": "T",
+                              "fill": "$p-text",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Desa Wisata Panembangan",
+                              "fontFamily": "$p-font-body",
+                              "fontSize": 15,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "MZFeA",
+                              "name": "D",
+                              "fill": "$p-muted",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Tourism website with destinations, maps and booking via WhatsApp.",
+                              "lineHeight": 1.6,
+                              "fontFamily": "$p-font-body",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "kPlSN",
+                              "name": "S",
+                              "fill": "$p-faint",
+                              "content": "WordPress · Maps API · Mobile-first",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "sEa6W",
+                              "name": "Link",
+                              "fill": "$p-accent",
+                              "content": "View Details →  Live Demo ↗",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ylki1",
+          "name": "Resume + Contact",
+          "width": "fill_container",
+          "fill": "$p-surface",
+          "gap": 16,
+          "padding": [
+            72,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "BmiCY",
+              "name": "CV left",
+              "width": "fill_container",
+              "fill": "$p-bg",
+              "cornerRadius": 14,
+              "stroke": "$p-border",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 14,
+              "padding": 28,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "c3CAG",
+                  "name": "Eyebrow",
+                  "fill": "$p-accent",
+                  "content": "CURRICULUM VITAE",
+                  "fontFamily": "$p-font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "KIdti",
+                  "name": "Title",
+                  "fill": "$p-text",
+                  "content": "My Resume",
+                  "fontFamily": "$p-font-head",
+                  "fontSize": 32,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "w8gU3D",
+                  "name": "Sub",
+                  "fill": "$p-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Preview my resume below or download the full PDF version.",
+                  "fontFamily": "$p-font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "A80rfI",
+                  "name": "Btn row",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "xSj6h",
+                      "name": "B1",
+                      "fill": "$p-text",
+                      "cornerRadius": 8,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wkhHp",
+                          "name": "T",
+                          "fill": "#0F0F0F",
+                          "content": "View PDF ↗",
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 13,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "LlKSB",
+                      "name": "B2",
+                      "fill": "$p-card",
+                      "cornerRadius": 8,
+                      "stroke": "$p-border",
+                      "strokeWidth": 1,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "GTlEO",
+                          "name": "T",
+                          "fill": "$p-text",
+                          "content": "Download CV",
+                          "fontFamily": "$p-font-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "D6qAkA",
+                  "name": "CV preview card",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 10,
+                  "stroke": "$p-border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "kvoXq",
+                      "name": "PDF bar",
+                      "width": "fill_container",
+                      "fill": "#F5F5F5",
+                      "gap": 8,
+                      "padding": [
+                        10,
+                        14
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "r5LMJ",
+                          "name": "File",
+                          "fill": "#0F0F0F",
+                          "content": "● Resume.pdf — Preview",
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "er92p",
+                          "name": "Badge",
+                          "fill": "#0F0F0F",
+                          "cornerRadius": 6,
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "R2pw7p",
+                              "name": "PDF",
+                              "fill": "#FFFFFF",
+                              "content": "PDF · 2 pages",
+                              "fontFamily": "$p-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "VvYx0",
+                      "name": "Doc body",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "f85Mh4",
+                          "name": "Doc name",
+                          "fill": "#0F0F0F",
+                          "content": "Muhammad Sayyid Murtaja",
+                          "fontFamily": "$p-font-head",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Pre83",
+                          "name": "Doc role",
+                          "fill": "#6B7280",
+                          "content": "Fullstack Developer · Tangerang · Remote Ready",
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "RUh83",
+                          "name": "Divider",
+                          "fill": "#E5E7EB",
+                          "width": "fill_container",
+                          "height": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "q1FUIm",
+                          "name": "Sec",
+                          "fill": "#0F0F0F",
+                          "content": "EXPERIENCE — Fullstack Developer",
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 3,
+                          "id": "zZTGf",
+                          "name": "Line",
+                          "fill": "#E5E7EB",
+                          "width": 480,
+                          "height": 6
+                        },
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 3,
+                          "id": "X7nPzo",
+                          "name": "Line",
+                          "fill": "#E5E7EB",
+                          "width": 440,
+                          "height": 6
+                        },
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 3,
+                          "id": "xf1fI",
+                          "name": "Line",
+                          "fill": "#E5E7EB",
+                          "width": 380,
+                          "height": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "Xvh74",
+                          "name": "Sec",
+                          "fill": "#0F0F0F",
+                          "content": "EDUCATION — Unsoed, RevoU, Kesatria",
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 3,
+                          "id": "zM82X",
+                          "name": "Line",
+                          "fill": "#E5E7EB",
+                          "width": 480,
+                          "height": 6
+                        },
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 3,
+                          "id": "Wq8Df",
+                          "name": "Line",
+                          "fill": "#E5E7EB",
+                          "width": 440,
+                          "height": 6
+                        },
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 3,
+                          "id": "m0Mnz",
+                          "name": "Line",
+                          "fill": "#E5E7EB",
+                          "width": 380,
+                          "height": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "XGPef",
+                          "name": "Sec",
+                          "fill": "#0F0F0F",
+                          "content": "SKILLS — React, Next.js, NestJS, PostgreSQL",
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 3,
+                          "id": "e2VEt",
+                          "name": "Line",
+                          "fill": "#E5E7EB",
+                          "width": 480,
+                          "height": 6
+                        },
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 3,
+                          "id": "jTULo",
+                          "name": "Line",
+                          "fill": "#E5E7EB",
+                          "width": 440,
+                          "height": 6
+                        },
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 3,
+                          "id": "jsP4P",
+                          "name": "Line",
+                          "fill": "#E5E7EB",
+                          "width": 380,
+                          "height": 6
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "k14bl",
+                      "name": "Doc foot",
+                      "width": "fill_container",
+                      "fill": "#0F0F0F",
+                      "gap": 10,
+                      "padding": [
+                        10,
+                        14
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "PqOjE",
+                          "name": "Pages",
+                          "fill": "$p-muted",
+                          "content": "Page 1 / 2 · Updated Jun 2026",
+                          "fontFamily": "$p-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "AeeAg",
+                          "name": "DL",
+                          "fill": "$p-accent",
+                          "cornerRadius": 6,
+                          "padding": [
+                            8,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "W9zpU",
+                              "name": "DL t",
+                              "fill": "#0F0F0F",
+                              "content": "Download ⤓",
+                              "fontFamily": "$p-font-body",
+                              "fontSize": 12,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "d4SdR",
+              "name": "Contact right",
+              "width": "fill_container",
+              "fill": "$p-accent",
+              "cornerRadius": 14,
+              "layout": "vertical",
+              "gap": 14,
+              "padding": 28,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "gGuIw",
+                  "name": "Eyebrow",
+                  "fill": "#0F0F0F",
+                  "content": "CONTACT",
+                  "fontFamily": "$p-font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "rNnP9",
+                  "name": "Title",
+                  "fill": "#0F0F0F",
+                  "content": "Let's Work Together",
+                  "fontFamily": "$p-font-head",
+                  "fontSize": 36,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "f1xpe",
+                  "name": "Rows",
+                  "fill": "#0F0F0F",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "EMAIL sayyid.tw@gmail.com · PHONE 0882-0034-31868 · LINKEDIN /sayyidmurtaja · WEB teknosea.my.id · LOC Tangerang, remote-ready",
+                  "lineHeight": 1.8,
+                  "fontFamily": "$p-font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "o2UIMB",
+                  "name": "Send",
+                  "width": "fill_container",
+                  "fill": "#0F0F0F",
+                  "cornerRadius": 10,
+                  "padding": 16,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "pjGHw",
+                      "name": "T",
+                      "fill": "$p-accent",
+                      "content": "Send Message →",
+                      "fontFamily": "$p-font-body",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "giZ5a",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "#0A0A0A",
+          "gap": 20,
+          "padding": [
+            28,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "j3rJi",
+              "name": "F left",
+              "fill": "$p-faint",
+              "textGrowth": "fixed-width",
+              "width": 400,
+              "content": "sayyid murtaja — Fullstack Developer · Tangerang",
+              "fontFamily": "$p-font-mono",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "vQDKR",
+              "name": "F mid",
+              "fill": "$p-muted",
+              "content": "About · Experience · Skills · Projects · Contact",
+              "fontFamily": "$p-font-mono",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "P2qQC",
+              "name": "F CTA",
+              "fill": "$p-text",
+              "cornerRadius": 8,
+              "padding": [
+                10,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "R4Tz5",
+                  "name": "T",
+                  "fill": "#0F0F0F",
+                  "content": "Get in Touch",
+                  "fontFamily": "$p-font-body",
+                  "fontSize": 12,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "p-bg": {
+      "type": "color",
+      "value": "#0F0F0F"
+    },
+    "p-text": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "p-font-body": {
+      "type": "string",
+      "value": "Inter"
+    },
+    "p-font-head": {
+      "type": "string",
+      "value": "Geist"
+    },
+    "p-muted": {
+      "type": "color",
+      "value": "#9CA3AF"
+    },
+    "p-font-mono": {
+      "type": "string",
+      "value": "Geist Mono"
+    },
+    "p-accent": {
+      "type": "color",
+      "value": "#C8FF2E"
+    },
+    "p-surface": {
+      "type": "color",
+      "value": "#161616"
+    },
+    "p-border": {
+      "type": "color",
+      "value": "#2A2A2A"
+    },
+    "p-card": {
+      "type": "color",
+      "value": "#1A1A1A"
+    },
+    "p-faint": {
+      "type": "color",
+      "value": "#6B7280"
+    },
+    "p-accent-dim": {
+      "type": "color",
+      "value": "#2A3313"
+    }
+  },
+  "fileToken": "af48dea0-8d6b-4712-9628-a63ae2a682ae"
+}
