@@ -45,6 +45,9 @@ const PROJECTS = [
     desc: 'Conversational AI over official university documents with grounded answers, real-time chat and automated transcript plus SKAK requests.',
     stack: 'Python · Flask · LlamaIndex · Groq · WebSockets',
     url: null,
+    github: 'https://github.com/sayyidmurtaja-22',
+    badge: 'Academic Assistant',
+    highlights: ['University document retrieval', 'Real-time chat', 'Transcript and SKAK requests'],
   },
   {
     id: 'detect',
@@ -55,6 +58,9 @@ const PROJECTS = [
     desc: 'Cross-platform Flutter app that detects and counts objects live via camera for smooth, lag-free inference on mobile hardware.',
     stack: 'Flutter · Dart · TensorFlow Lite · Provider',
     url: null,
+    github: 'https://github.com/sayyidmurtaja-22',
+    badge: 'On-Device Mobile ML',
+    highlights: ['Live camera detection', 'Object counting', 'TensorFlow Lite inference'],
   },
   {
     id: 'panembangan',
@@ -65,6 +71,9 @@ const PROJECTS = [
     desc: 'Tourism destination web portal featuring mobile-first visual layouts, interactive route maps, and integrated reservation flows.',
     stack: 'WordPress · Maps API · WhatsApp Forms',
     url: null,
+    github: null,
+    badge: 'Demo link not available',
+    highlights: ['Interactive route maps', 'WhatsApp reservation forms', 'Mobile-first layout'],
   },
 ];
 
@@ -132,19 +141,56 @@ function ProjectCard({ project, index }) {
       <div className="p-5 sm:p-6 flex flex-col flex-1">
         <h3 className="text-[16px] sm:text-[17px] font-bold leading-snug text-ink">{project.fullTitle}</h3>
         <p className="mt-2.5 text-[13px] leading-6 text-muted flex-1">{project.desc}</p>
-        
+        {/* Project Technical Highlights if available */}
+        {project.highlights && (
+          <div className="mt-3.5 flex flex-wrap gap-1.5">
+            {project.highlights.map((h) => (
+              <span
+                key={h}
+                className="inline-flex items-center text-[10.5px] font-mono px-2 py-0.5 rounded bg-surface border border-line text-caption"
+              >
+                <span className="w-1 h-1 rounded-full bg-accent/70 mr-1.5" />
+                {h}
+              </span>
+            ))}
+          </div>
+        )}
+
         <div className="mt-4 pt-3 border-t border-line flex flex-wrap items-center justify-between gap-3">
           <p className="font-mono text-[11px] leading-5 text-accent/90">{project.stack}</p>
-          {project.url && (
-            <a
-              href={project.url}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-1.5 text-[12px] font-semibold text-accent hover:brightness-125 transition-all link-underline-fade"
-            >
-              Live Demo <span aria-hidden="true">↗</span>
-            </a>
-          )}
+          
+          <div className="flex items-center gap-2">
+            {project.url && (
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-1.5 text-[12px] font-semibold text-accent hover:brightness-125 transition-all link-underline-fade"
+              >
+                Live Demo <span aria-hidden="true">↗</span>
+              </a>
+            )}
+            
+            {project.github && (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-1.5 text-[11px] font-mono px-2.5 py-1 rounded-md bg-surface border border-line text-ink hover:border-accent hover:text-accent transition-colors"
+              >
+                <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                </svg>
+                GitHub Profile ↗
+              </a>
+            )}
+
+            {!project.url && !project.github && project.badge && (
+              <span className="font-mono text-[10.5px] px-2.5 py-1 rounded-md bg-surface border border-line text-caption">
+                ● {project.badge}
+              </span>
+            )}
+          </div>
         </div>
       </div>
     </motion.article>

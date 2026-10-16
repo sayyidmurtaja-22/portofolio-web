@@ -1,27 +1,47 @@
-import { Injectable } from '@nestjs/common';
+import {
+  BadRequestException,
+  Injectable,
+  InternalServerErrorException,
+  Logger,
+  ServiceUnavailableException,
+} from '@nestjs/common';
 import { CreateContactDto } from './dto/create-contact.dto';
+
+export interface ContactResponse {
+  success: boolean;
+  message: string;
+  data: {
+    name: string;
+    email: string;
+    timestamp: string;
+  };
+}
 
 @Injectable()
 export class ContactService {
-  async create(createContactDto: CreateContactDto) {
-    // Here you can add logic to:
-    // - Save to database
-    // - Send email notification
-    // - Integrate with third-party services
+  private readonly logger = new Logger(ContactService.name);
 
-    console.log('Contact form submission received:');
-    console.log('Name:', createContactDto.name);
-    console.log('Email:', createContactDto.email);
-    console.log('Message:', createContactDto.message);
+  async create(createContactDto: CreateContactDto): Promise<ContactResponse> {
+    try {
+      if (!createContactDto.name?.trim() || !createContactDto.email?.trim() || !createContactDto.message?.trim()) {
+        throw new BadRequestException('All fields (name, email, message) are required');
+      }
 
-    return {
-      success: true,
-      message: 'Your message has been received. Thank you for reaching out!',
-      data: {
-        name: createContactDto.name,
-        email: createContactDto.email,
-        timestamp: new Date().toISOString(),
-      },
-    };
+      throw new ServiceUnavailableException({
+        success: false,
+        message: 'Message delivery is not configured. Please email sayyid.tw@gmail.com directly.',
+      });
+    } catch (error) {
+      if (error instanceof BadRequestException || error instanceof ServiceUnavailableException) {
+        throw error;
+      }
+
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+      this.logger.error(`Failed to process contact submission: ${errorMessage}`);
+      throw new InternalServerErrorException({
+        success: false,
+        message: 'Failed to process contact submission. Please try again later.',
+      });
+    }
   }
 }

@@ -34,8 +34,5 @@
         }
       ]
     }
-  ],
-  "env": {
-    "VITE_API_URL": "https://api-placeholder.com"
-  }
+  ]
 }

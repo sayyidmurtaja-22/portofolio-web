@@ -25,6 +25,7 @@
     text-rendering: optimizeLegibility;
   }
   ::selection { background-color: #C8FF2E; color: #0F0F0F; }
+  :focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
 }
 
 @layer utilities {
@@ -79,6 +80,7 @@
   }
   .animate-float-slow { animation: float-slow 7s ease-in-out infinite; }
   @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
     .animate-marquee-x, .animate-float-slow { animation: none; }
   }
 }

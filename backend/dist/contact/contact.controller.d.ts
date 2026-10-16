@@ -3,13 +3,5 @@ import { CreateContactDto } from './dto/create-contact.dto';
 export declare class ContactController {
     private readonly contactService;
     constructor(contactService: ContactService);
-    create(createContactDto: CreateContactDto): Promise<{
-        success: boolean;
-        message: string;
-        data: {
-            name: string;
-            email: string;
-            timestamp: string;
-        };
-    }>;
+    create(createContactDto: CreateContactDto): Promise<import("./contact.service").ContactResponse>;
 }

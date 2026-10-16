@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
 
 const LINKS = ['Home', 'About', 'Experience', 'Skills', 'Projects', 'Resume', 'Contact'];
@@ -7,13 +7,15 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState('home');
   const [open, setOpen] = useState(false);
+  const toggleRef = useRef(null);
+  const menuRef = useRef(null);
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, { stiffness: 120, damping: 20, restDelta: 0.001 });
 
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 8);
-      const ids = ['home', 'about', 'experience', 'skills', 'projects', 'resume', 'contact'];
+      const ids = ['contact', 'resume', 'projects', 'skills', 'experience', 'about', 'home'];
       const cur = ids.find((id) => {
         const el = document.getElementById(id);
         if (!el) return false;
@@ -23,13 +25,46 @@ const Navbar = () => {
       if (cur) setActive(cur);
     };
     window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = open ? 'hidden' : '';
-    return () => { document.body.style.overflow = ''; };
+    if (!open) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    menuRef.current?.querySelector('button')?.focus();
+    const onKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        setOpen(false);
+        toggleRef.current?.focus();
+      }
+      if (event.key === 'Tab') {
+        const buttons = Array.from(menuRef.current?.querySelectorAll('button') ?? []);
+        const first = toggleRef.current;
+        const last = buttons.at(-1);
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last?.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first?.focus();
+        }
+      }
+    };
+    document.addEventListener('keydown', onKeyDown);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      document.removeEventListener('keydown', onKeyDown);
+    };
   }, [open]);
+
+  useEffect(() => {
+    const desktop = window.matchMedia('(min-width: 768px)');
+    const onChange = (event) => { if (event.matches) setOpen(false); };
+    desktop.addEventListener('change', onChange);
+    return () => desktop.removeEventListener('change', onChange);
+  }, []);
 
   const go = (id) => {
     setOpen(false);
@@ -62,6 +97,7 @@ const Navbar = () => {
                   <button
                     key={label}
                     onClick={() => go(id)}
+                    aria-current={isActive ? 'location' : undefined}
                     className={`relative font-mono text-[12px] tracking-[0.08em] uppercase transition-colors ${isActive ? 'text-ink' : 'text-muted hover:text-ink'}`}
                   >
                     {label}
@@ -75,7 +111,7 @@ const Navbar = () => {
               <button onClick={() => go('contact')} className="hidden md:inline-flex items-center justify-center h-10 px-6 rounded-lg bg-accent text-[#0F0F0F] text-[13px] font-semibold hover:brightness-110 transition-all">
                 Get in Touch
               </button>
-              <button onClick={() => setOpen((v) => !v)} className="md:hidden h-10 w-10 grid place-items-center rounded-lg border border-line bg-bg text-ink hover:border-accent transition-colors" aria-label="Toggle menu" aria-expanded={open}>
+              <button ref={toggleRef} onClick={() => setOpen((v) => !v)} className="md:hidden h-10 w-10 grid place-items-center rounded-lg border border-line bg-bg text-ink hover:border-accent transition-colors" aria-label="Toggle menu" aria-expanded={open} aria-controls="mobile-navigation">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7">
                   {open ? <path d="M6 18L18 6M6 6l12 12" /> : <><path d="M4 8h14" /><path d="M4 14h14" /><path d="M4 20h14" /></>}
                 </svg>
@@ -89,7 +125,7 @@ const Navbar = () => {
             <>
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 top-[72px] bg-black/60 backdrop-blur-sm md:hidden" onClick={() => setOpen(false)} />
               <motion.div initial={{ opacity: 0, y: -8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.2 }} className="md:hidden absolute top-[72px] inset-x-3 rounded-2xl bg-card border border-line shadow-elevated overflow-hidden">
-                <div className="p-2">
+                <div id="mobile-navigation" ref={menuRef} className="p-2">
                   {LINKS.map((l) => (
                     <button key={l} onClick={() => go(l.toLowerCase())} className={`w-full text-left rounded-xl px-4 py-3 text-[15px] font-medium transition-colors ${active === l.toLowerCase() ? 'bg-accent text-[#0F0F0F]' : 'text-muted hover:text-ink hover:bg-surface'}`}>
                       {l}

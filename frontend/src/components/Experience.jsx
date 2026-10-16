@@ -263,7 +263,7 @@ const Experience = () => {
 
               {/* Modal Body */}
               <div className="p-4 sm:p-6 overflow-y-auto space-y-5">
-                {/* PDF Live Preview Frame */}
+                {/* PDF Live Preview Frame & Mobile Fallback */}
                 <div className="rounded-xl border border-line overflow-hidden bg-black/40">
                   <div className="flex items-center justify-between px-4 py-2 bg-surface/80 border-b border-line text-[11px] font-mono text-muted">
                     <span className="flex items-center gap-2 truncate">
@@ -279,13 +279,48 @@ const Experience = () => {
                       Open in Tab ↗
                     </a>
                   </div>
-                  <div className="h-[420px] sm:h-[520px] bg-white relative">
+
+                  {/* Desktop / Tablet Iframe */}
+                  <div className="hidden sm:block h-[420px] sm:h-[520px] bg-white relative">
                     <iframe
                       src={`${cert.file}#view=FitH`}
                       title={cert.role}
                       className="w-full h-full border-0"
                       loading="lazy"
                     />
+                  </div>
+
+                  {/* Mobile Preview & Actions Card */}
+                  <div className="sm:hidden p-6 bg-surface/90 flex flex-col items-center text-center space-y-4">
+                    <div className="h-14 w-14 rounded-2xl bg-accent-dim border border-accent/30 flex items-center justify-center text-accent">
+                      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="text-xs font-mono uppercase tracking-wider text-accent font-semibold">{cert.badge}</p>
+                      <h4 className="mt-1 text-sm font-bold text-ink">{cert.role}</h4>
+                      <p className="mt-1 text-xs text-muted max-w-[260px]">
+                        Mobile browsers cannot reliably display embedded PDFs inside modal frames. Tap below to view or save the verified document.
+                      </p>
+                    </div>
+                    <div className="w-full flex flex-col gap-2 pt-1">
+                      <a
+                        href={cert.file}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="w-full inline-flex items-center justify-center h-10 px-4 rounded-lg bg-accent text-[#0F0F0F] text-xs font-semibold hover:brightness-110 transition-all shadow-sm"
+                      >
+                        Open Document (PDF) <span className="ml-1" aria-hidden="true">↗</span>
+                      </a>
+                      <a
+                        href={cert.file}
+                        download
+                        className="w-full inline-flex items-center justify-center h-10 px-4 rounded-lg bg-card border border-line text-ink text-xs font-medium hover:border-accent transition-colors"
+                      >
+                        Download PDF <span className="ml-1" aria-hidden="true">⤓</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
 

@@ -8,7 +8,7 @@ const INFO = [
 ];
 
 const STATS = [
-  { k: '5', v: 'Projects' },
+  { k: '6', v: 'Projects' },
   { k: '5+', v: 'Trainings' },
   { k: '2+', v: 'Years' },
 ];
